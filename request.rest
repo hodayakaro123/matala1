@@ -1,3 +1,12 @@
+### 
+
+POST http://localhost:3000/posts
+Content-Type: application/json
+
+{
+    "sender": "Tom",
+    "message": "How are you?"
+}
 
 ###
 
@@ -5,23 +14,20 @@ GET http://localhost:3000/posts
 
 ###
 
-GET http://localhost:3000/posts?owner=Eliav
+GET http://localhost:3000/posts/673d926d28519f766c721596
+
 
 ###
 
-GET http://localhost:3000/posts/6734b0c818a1cf8344804554
+GET http://localhost:3000/posts/?sender=Tom
+
 
 ###
 
-POST http://localhost:3000/posts
+PUT http://localhost:3000/posts/673d926d28519f766c721596
 Content-Type: application/json
 
 {
-    "title": "Hello",
-    "owner": "Kevin",
-    "content": "Hello World..."
+    "sender": "Hodaya",
+    "message": "How are you Tom?"
 }
-
-###
-
-DELETE http://localhost:3000/posts/6734b0c818a1cf8344804554

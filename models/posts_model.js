@@ -1,12 +1,11 @@
 const mongoose = require("mongoose");
 
 const postSchema = new mongoose.Schema({
-  title: {
+  sender: {
     type: String,
     required: true,
   },
-  content: String,
-  owner: {
+  message: {
     type: String,
     required: true,
   },
